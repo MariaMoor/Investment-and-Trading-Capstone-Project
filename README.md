@@ -19,21 +19,24 @@ In this project I have built a stock price predictor that takes daily trading da
 <a name="instal"></a>
 ## Installations:
 
+to get the stock market information you need to pip install get-all-tickers
+
+`pip install get-all-tickers`
+
 I did my project on the 3.6.3 version of Python and used the following libraries:
 
-re<br />
 sys<br />
 sqlchemy<br />
 sqlite3<br />
 pandas<br />
 numpy<br />
-nltk<br />
+
 sklearn<br />
 pickle<br />
 flask<br />
-SQLAlchemy<br />
+
 plotly<br />
-json<br />
+
 
 
 <a name="fd"></a>

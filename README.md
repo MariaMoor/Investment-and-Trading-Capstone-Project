@@ -89,3 +89,4 @@ I would like to give a credit to:
 Ran Aroussi for his codes to get data from Yahoo Finance https://github.com/ranaroussi/yfinance in a comfort way.
 https://github.com/shilewenuw/get_all_tickers
 https://quant.stackexchange.com/questions/26162/where-can-i-get-a-list-of-all-yahoo-finance-stocks-symbols
+https://github.com/arseniyturin/Capstone-Project

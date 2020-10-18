@@ -22,6 +22,9 @@ In this project I have built a stock price predictor that takes daily trading da
 to get the stock market information you need to pip install get-all-tickers
 
 `pip install get-all-tickers`
+`pip install yfinance`
+`pip install keras`
+`pip install tensorflow`
 
 I did my project on the 3.6.3 version of Python and used the following libraries:
 

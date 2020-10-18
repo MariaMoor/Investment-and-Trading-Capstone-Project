@@ -25,6 +25,7 @@ to get the stock market information you need to pip install get-all-tickers
 `pip install yfinance`
 `pip install keras`
 `pip install tensorflow`
+pip install --ignore-installed --upgrade tensorflow==2.2
 
 I did my project on the 3.6.3 version of Python and used the following libraries:
 

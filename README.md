@@ -49,7 +49,7 @@ statsmodels<br />
 ## Files Descriptions:
 
 
-| |--  Capstone Project -----------------> main python file of the project with all visualisations, explanaitions and details<br />
+| |--  Capstone Project Predicting Stock Movements -----------------> main python file of the project with all visualisations, explanaitions and details<br />
 
 
 <a name="instr"></a>

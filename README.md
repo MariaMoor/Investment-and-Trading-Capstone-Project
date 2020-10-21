@@ -50,7 +50,7 @@ statsmodels<br />
 
 
 | |--  Capstone Project Predicting Stock Movements -----------------> main python file of the project with all visualisations, explanaitions and details<br />
-
+| |--  Capstone data.csv ----------> sample dataset with stock prices data and calculated parameters that I used for modelling
 
 <a name="instr"></a>
 ## Summary of the results of the analysis:

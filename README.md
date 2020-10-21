@@ -2,96 +2,70 @@
 
 
 ## Table of Contents:
-1. [ Project Overview.](#prov)
-2. [Installations.](#instal)
-3. [Files Descriptions.](#fd)
-4. [4444.](#me)
-5. [Instructions.](#instr)
-6. [666.](#scr)
-7. [Licensing, Authors, Acknowledgements.](#li)
+1. [Motivation for the project.](#mp)
+2. [Project Overview.](#prov)
+3. [Installations.](#instal)
+4. [Files Descriptions.](#fd)
+5. [Summary of the results of the analysis.](#scr)
+6. [Licensing, Authors, Acknowledgements.](#li)
 
+
+<a name="mp"></a>
+## Motivation for the project:
+
+I always was interested if it is possible to predict stock prices and even wrote my master to this topic. Also some friends of mine are doing trading.
+I was curious if python and machine learning techniques can support me in this query and make the predictions better. That I what I would like to study in my project.
 
 <a name="prov"></a>
 ## Project Overview:
 
-In this project I have built a stock price predictor that takes daily trading data over a certain date range as input, and outputs projected estimates for given query dates. 
+In my capstone project I am exploring the movements of stock prices and applying some machine learning technics, trying to predict the movements of stock prices.
+
+Data I use is from yahoo finance. As input I take daily trading data: opening price (Open), highest price the stock traded at (High), how many stocks were traded (Volume) and closing price adjusted for stock splits and dividends (Adjusted Close).
+
+First I am looking at the development of adj close stock prices by means of comparing a visualising different trading parameters: Daily returns, Cumulative returnes, Rolling statistics of mean, standard deviation and Bollinger Bands, as well as MACD and RSI. These parameters show, how risky (or volatile) are the stock prices, how profitable they are and what investing logic could be used. Several of these techniques indeed have some power to predict stock prices movements.
+
+After looking at the trading parameters, I am going forward in my analysis of stock prices movements by means of machine learning models. First I am using Classifiers to predict if Adjusted Close price is going up or down the next day for single stock. After that I am using Regressor models trying to predict the value change. As features I am using the trading parameters I explored in the previous part and lag values of the previous days. I am comparing different features, looking which set of them and for which period have the highest predictive power. I am also checking the models I would suggest to use for predictions for robustness, by testing them ob different stocks and for different time periods. 
 
 <a name="instal"></a>
 ## Installations:
 
-to get the stock market information you need to pip install get-all-tickers
+to get the stock market information you need to pip install yfinance
 
-`pip install get-all-tickers`
 `pip install yfinance`
-`pip install keras`
-`pip install tensorflow`
-pip install --ignore-installed --upgrade tensorflow==2.2
 
 I did my project on the 3.6.3 version of Python and used the following libraries:
 
-sys<br />
-sqlchemy<br />
-sqlite3<br />
 pandas<br />
 numpy<br />
-
+random<br />
+matplotlib<br />
+datetime<br />
+tqdm<br />
 sklearn<br />
-pickle<br />
-flask<br />
-
-plotly<br />
-
-
+statsmodels<br />
 
 <a name="fd"></a>
 ## Files Descriptions:
 
--- EFWUE<br />
-| -- ABUZG <br />
-| |--  WEFWEGF -----------------> main page of web app<br />
-| |-- segfeawg----------------------> classification result page of web app<br />
-|-- afgg -----------------------> Flask file that runs app<br />
 
+| |--  Capstone Project -----------------> main python file of the project with all visualisations, explanaitions and details<br />
 
-
-<a name="me"></a>
-## Model explanation:
-
-**11111**
 
 <a name="instr"></a>
-## Instructions:
+## Summary of the results of the analysis:
 
-There are 3 steps to be executed to run the project:
+In my research I tried to predict stock prices movements. For that I used different Machine Learning models. 
+Classification models seem to deliver very resilts with high predictive power of up to 80% on if a stock price is going to grow or fall the next days. Model that delivered the best results was Random Forest Classifier after tuning of its parameters (number of trees, minimum number of features to consider when looking for the best split and required to split an internal node, maximum depth of the tree and if or nor using Bootstraping. I got really great results using trading parameters (MACD and Signal, Rolling mean and standard deviation, RSI and Williams %R), that already according to their visualisation looked promising to predict price movements. Tuned model worked great for different time periods and for different stocks. It turned out that longer time periods doesnt contribute to higher predicive power of the model. Also just taking laged values of returnes doest make the predictions better. It also goes hand in hand with the fact that ARIMA model didnt work for predictions as it is baced on correlation between present and laged past values of stock prices.
 
-1. Clean Data<br />
-to run the script cleaning data you need to go to the project directory and run the following command:
-```
-python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
-```
-2. Run ML pipeline that trains classifier and saves it<br />
-for that to be done run this command from the project directory:
-```
-python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
-```
-3. Run web app<br />
-for that run the following command from app's directory
-```
-python run.py
-```
-Go to http://0.0.0.0:3001/
-
-<a name="scr"></a>
-
-zaewtvrliwetzi vtetoöi
 
 <a name="li"></a>
 ## Licensing, Authors, Acknowledgements:
 
 I would like to give a credit to:
-@Udacity
+@Udacity for providing Data SCience and Machine Learning for Trading cources
 Ran Aroussi for his codes to get data from Yahoo Finance https://github.com/ranaroussi/yfinance in a comfort way.
-https://github.com/shilewenuw/get_all_tickers
-https://quant.stackexchange.com/questions/26162/where-can-i-get-a-list-of-all-yahoo-finance-stocks-symbols
-https://github.com/arseniyturin/Capstone-Project
+Here I found some useful ideas what algorithms could be used in Traiding analysis https://github.com/arseniyturin/Capstone-Project
+Here I found a good article that explains tuning of random forest quite good:
 https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
+And thanks Statquest and Josh Starmer for great https://www.youtube.com/user/joshstarmer for creating great videos that explain statistic in such an easy cool way!

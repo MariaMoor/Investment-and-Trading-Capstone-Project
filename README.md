@@ -65,7 +65,10 @@ Classification models seem to deliver very resilts with high predictive power of
 I would like to give a credit to:
 @Udacity for providing Data SCience and Machine Learning for Trading cources
 Ran Aroussi for his codes to get data from Yahoo Finance https://github.com/ranaroussi/yfinance in a comfort way.
-Here I found some useful ideas what algorithms could be used in Traiding analysis https://github.com/arseniyturin/Capstone-Project
+Here I found some useful ideas what algorithms and useful parameters could be used in Traiding analysis:
+https://towardsdatascience.com/machine-learning-for-day-trading-27c08274df54
+https://github.com/arseniyturin/Capstone-Project
+
 Here I found a good article that explains tuning of random forest quite good:
 https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
 And thanks Statquest and Josh Starmer for great https://www.youtube.com/user/joshstarmer for creating great videos that explain statistic in such an easy cool way!

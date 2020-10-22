@@ -72,3 +72,6 @@ https://github.com/arseniyturin/Capstone-Project
 Here I found a good article that explains tuning of random forest quite good:
 https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
 And thanks Statquest and Josh Starmer for great https://www.youtube.com/user/joshstarmer for creating great videos that explain statistic in such an easy cool way!
+
+
+My medium arcticle to this project you can find here: https://mariamrfil.medium.com/how-good-are-machine-learning-techniques-in-predicting-stock-prices-ce4b81edb833
